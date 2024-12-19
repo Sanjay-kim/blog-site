@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+  }
+  .image-full{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 2em;
+  }
+  img{
+    max-width: 100%;
+    display: block;
+  }
+
+  /* =================
+Typography
+================= */
+
+
+h1,
+h2{
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #143774;
+  margin-top: 0;
+}
+h3{
+    color: #1792d2;
+    font-weight: 400;
+    font-family: "lora",sans-serif;
+    margin-top: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+a {
+  color: #1792d2;
+}
+
+a:hover,
+a:focus {
+  color: #143774;
+}
+
+/* h1 subtitle */
+.subtitle {
+    font-weight: 700;
+    color: #1792d2;
+    font-size: 0.75rem;
+    margin: 0;
+  }
+  
+/* =================
+Layout
+================= */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .container-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  header {
+    background: #f8f8f8;
+    padding: 2em 0;
+    /* text-align: center; */
+    margin-bottom: 3em;
+  }
+  @media (min-width: 675px) {
+    .container-flex {
+      flex-direction: row;
+    }
+  
+    main {
+      width: 70%;
+      margin-right: 1em;
+    }
+  
+    aside {
+      width: 25%;
+      min-width: 200px;
+    
+    }
+  }
+
+  /* navigation */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin-left: 2em;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: 0.25em 0;
+  }
+  
+  nav a:hover,
+  nav a:focus {
+    color: #1792d2;
+  }
+  
+  .current-page {
+    border-bottom: 1px solid #707070;
+  }
+  
+  .current-page:hover {
+    color: #707070;
+  }
+  
+  @media (max-width: 675px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav li {
+      margin: 0.5em 0;
+      text-align: center;
+    }
+  }
+
+  .sidebar-widget{
+    border: 20px solid #efefef;
+    padding: 1em;
+    margin-bottom: 2em;
+  }
+  .widget-title{
+    font-family: "ubuntu";
+    font-weight: 700;
+  }
+  .widget-title,.widget-recent-post-title{
+    font-size: 1rem;
+    color: #143774;
+  }
+  .widget-recent-post-title{
+  font-family: "lora",serif;
+  margin-top: 0;
+  }
+  .widget-recent-post{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 1em;
+  }
+  .widget-recent-post:last-child{
+    border: none;
+    margin: 0;
+  }
+  
+  .widget-image{
+    order: -1;
+  }
+  footer{
+    background-color: #143774;
+    color: white;
+    text-align: center;
+    padding: 3em 0;
+  }
